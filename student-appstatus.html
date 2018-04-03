@@ -1,0 +1,28 @@
+
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Name</td>
+            <td>ID</td>
+            <td>Pointer</td>
+            <td>Company name</td>
+			<td>Status</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["id"]}}</td>
+               <td> {{ row["pointer"]}}</td>
+               <td>{{row['company']}}</td>
+				<td>{{row['status']}}</td>			   
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
